@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+<title>Teacher Assessment</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px" align="center">
+  <img class="mySlides" src="slide2.jpg" style="width:250%" "height:100%">
+  <img class="mySlides" src="slide3.jpg" style="width:250%" "height:100%">
+  <img class="mySlides" src="slide4.jpg" style="width:250%" "height:100%">
+  <img class="mySlides" src="slide5.jpg" style="width:250%" "height:100%">
+  <img class="mySlides" src="slide6.jpg" style="width:250%" "height:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+<style type="text/css">
+* { 
+  margin:0;
+  border:0;
+  padding:0;
+}
+body {
+     background: #f0f0f0;
+	 font:14px/20px Arial,San-Serif;
+	 color:#555;
+	 margin:0;
+}
+h1{
+  text-align:center;
+  font-size:180%;
+  line-height:120%
+  padding:5% 0;
+}
+h2 {
+  text-decoration:underline;
+  line-height:280%;
+  padding-left:2%;
+}
+h3 {
+   line-height:110%;
+   padding:5% 0;
+}
+p{
+  padding:1%
+}
+img {
+  text-align:center;
+  max-width:100%
+  height:auto;
+  width:auto;
+}
+a{
+  color:#fff;
+  text decoration:none;
+  font-weight:bold;
+}
+a:hover{
+  color:#fff;
+  text decoration:underline;
+}
+header{
+  background :#405580;
+  width:100%;
+  height:86px;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:100;
+  opacity:0.90%
+}
+
+nav {
+    float:right;
+	padding:35px 20px 20px 0
+}
+
+ul{
+   list-style:none;
+}
+nav ul li{
+  display:inline-block;
+  float:left;
+  padding:10px;
+}
+.current{
+   color:#fff;
+   text-decoration:underline;
+}
+
+section{
+  width:29%
+  float:left;
+  margin:2% 2%;
+  text-align:center;
+}
+
+aside{
+   float:center;
+   margin:0 auto;
+   width:10%;
+   height:auto;
+
+}
+footer{
+  width:100%;
+  background:#333333;
+  overflow:hidden;
+  opacity:.90;
+}
+footer p,footer h3{
+  color:#fff;
+}
+footer p a {
+  color:#fff;
+  text-decoration:none;
+}
+ul.social li{
+   display:inline;
+}
+ul.social li img{
+   height:50px;
+}
+footer.second{
+   border-top:1px solid #4d4e50;
+   background-color:#333333;
+   max-height:100px;
+   text-align:center;
+   opacity:0.95;
+}
+
+</style>
+ 
+</head>
+<body>
+   <header>
+   <a href ="#" id="logo"></a>
+   <nav>
+     
+   <ul>
+      <li><a href ="#" class="current">Home</a></li>
+	  <li><a href="about.html">About Us</a></li>
+	  <li><a href="Login_form.php">Department</a></li>
+	  <li><a href="contact.html">Contact Us</a></li>
+   </ul>  
+	</nav> 
+   </header>
+ <br>
+      <h1>About College</h1>
+      <p>Sri Guru Gobind Singh College of Commerce, founded in 1984, as the commerce college in the University of Delhi,
+      has emerged as a unique institution progressing towards unprecedented heights. 
+      The college provides a blend of resources and environment for all round personality development of its students
+   </section>
+    <section>
+      <img src="location.png"/>
+      <h1>Location</h1>
+      <p>near NSP metro station,pitampura infornt of tv tower</p>
+   </section>
+      <section>
+       <img src="check.png" />
+	   <h1>Login</h1>
+	   <a href="Login_form.php">Login_form</a> 
+       <p>students are requested to login through this form and give their feedback</p>
+   </section>
+   <footer>
+	<div align="center">
+	   <h3><b><u>Teacher Assessment</u><br><br><br>
+	   Connect With Us</b></h3>
+	  <ul class="social">
+	  <li><a href="#"><img src="facebook1.png"/></a></li>
+	  <li><a href="#"><img src="googleplus.png"/></a></li>
+	  <li><a href="#"><img src="twitter1.png"/></a></li>
+	  </div>
+	<section>
+	   <img src="pic2.jpg"/>
+	</section>
+	</footer>
+	<footer class= "second">
+	  <p>@Copyright-Teacher Assessment,2017</p>
+	  <p>Developed by-Bhavdeep,Disha,Ridhi.</p>
+	</footer>
+</body>
+</html>
